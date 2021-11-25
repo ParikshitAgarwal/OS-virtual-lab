@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="../style/algo.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1 class="heading">DEMO</h1>
+    <h2 class="heading">(Belady's Anomaly Graph)</h2>
+
+    <div class="card">
+        <div class="container">
+            <div class="card_input">
+            <h1 class="heading">INPUT</h1>
+            
+            <p class="info">Reference String:</p>
+            <input class="input" type="text" style="width: 55%;" id="input">
+            <!-- <strong>Frames:</strong> <input class="input" type="number" id="frames" style="width: 10%;" min=1 max=10> -->
+            <button class="input" id="submit">Submit</button>
+        </div> <div>
+              <br>
+              <div id="chartContainer"></div>
+              <table id="table" class="container text-center">
+              </table>
+              <br>
+              <div id="summary" class="d-flex justify-content-around font-weight-bold text-uppercase"> </div>
+            </div>
+          </div>
+    </div>
+       
+    </div>
+    <div id="chartContainer"></div>
+    <script src="../js/belady.js"></script>
+    <script type="text/javascript" src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+</body>
+
+</html>

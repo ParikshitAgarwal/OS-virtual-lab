@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BELADY</title>
+    <link rel="stylesheet" href="../style/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,900&family=Roboto:ital,wght@0,300;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- header -->
+    <header class="nav">
+        <a href="#">Home</a>
+        <a href="./intro.html">Introduction</a>
+        <a href="./fifo.html">FIFO</a>
+        <a href="./lifo.html">LIFO</a>
+        <a href="./lru.html">LRU</a>
+        <a href="./optimal.html">Optimal</a>
+        <a href="./belady.html">Belady's Anomaly</a>
+        <a href="./comparision.html">Comparision</a>
+    </header>
+    <!-- FIFO Body -->
+    <div class="body">
+        <div class="card-container">
+            <!-- FIFO -->
+            <div class="card">
+                <h1 class="heading">Belady's Anomaly</h1>
+                <br>
+                <p class="info">Bélády’s anomaly is the name given to the phenomenon where increasing the number of page frames results in an increase in the number of page faults for a given memory access pattern.</p>
+                <br>
+                <p class="info">This phenomenon is commonly experienced in following page replacement algorithms:</p>
+                <br>
+                <ul>
+                    <li><p class="info">First in first out (FIFO)</p></li>
+                    <li><p class="info">Second chance algorithm</p></li>
+                    <li><p class="info">Random page replacement algorithm</p></li>
+                </ul>
+                <br>
+                <p class="info">The other two commonly used page replacement algorithms are Optimal and LRU, but Belady’s Anamoly can never occur in these algorithms for any reference string as they belong to a class of stack based page replacement algorithms.</p>
+            </div>
+            <!-- Example -->
+            <div class="card">
+                <h1 class="heading">Example:-</h1>
+                <br>
+                <p class="info">Assuming a system that has no pages loaded in the memory and uses the FIFO Page replacement algorithm. Consider the following reference string:</p>
+                <br>
+                <p class="info">String:- 1 2 3 4 1 2 5 1 2 3 4 5</p>
+                <br>
+                <p class="info">Case 1:- No. of frames = 3</p>
+                <br>
+                <img src="../img/belady1.png" alt="belady-example">
+                <br>
+                <p class="info">Using FIFO page replacement algorithm yields a total of 9 page faults. The diagram below illustrates the pattern of the page faults occurring in the example.</p>
+                <br>
+                <p class="info">Case 2:- No. of frames = 4</p>
+                <br>
+                <img src="../img/belady2.png" alt="belady-example">
+                <br>
+                <p class="info">the given reference string on using FIFO page replacement algorithm yields a total of 10 page faults. The diagram below illustrates the pattern of the page faults occurring in the example.</p>
+            </div>
+            <!-- FIFO Algo -->
+
+            <input type="button" onClick="parent.location='belady_algo.html'" value="Demo" class="btn">
+        </div>
+    </div>
+
+    <script src="../js/belady.js"></script>
+    <script type="text/javascript" src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+</body>
+</html>

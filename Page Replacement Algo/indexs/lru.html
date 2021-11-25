@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LRU</title>
+    <link rel="stylesheet" href="../style/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,900&family=Roboto:ital,wght@0,300;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- header -->
+    <header class="nav">
+        <a href="#">Home</a>
+        <a href="./intro.html">Introduction</a>
+        <a href="./fifo.html">FIFO</a>
+        <a href="./lifo.html">LIFO</a>
+        <a href="./lru.html">LRU</a>
+        <a href="./optimal.html">Optimal</a>
+        <a href="./belady.html">Belady's Anomaly</a>
+        <a href="./comparision.html">Comparision</a>
+    </header>
+    <!-- FIFO Body -->
+    <div class="body">
+        <div class="card-container">
+            <!-- FIFO -->
+            <div class="card">
+                <h1 class="heading">LRU Algorithm</h1>
+                <br>
+                <p class="info">Least Recently Used (LRU)</p>
+                <br>
+                <p class="info">Least Recently Used (LRU) Page Replacement.</p>
+                <br>
+                <p class="info">Conversely, pages that have not been used for ages will probably remain unused for a long time. This idea suggests a realizable algorithm: when a page fault occurs, throw out the page that has been unused for the longest time. This strategy is called LRU (Least Recently Used) paging.</p>
+                <br>
+                <p class="info">In Least Recently Used (LRU) algorithm is a Greedy algorithm where the page to be replaced is least recently used. The idea is based on locality of reference, the least recently used page is not likely.</p>
+                <br>
+                <p class="info">In the Least Recently Used (LRU) page replacement policy, the page that is used least recently will be replaced. Implementation: Add a register to every page frame - contain the last time that the page in that frame was accessed. Use a "logical clock" that advance by 1 tick each time a memory reference is made.</p>
+            </div>
+            <!-- Example -->
+            <div class="card">
+                <h1 class="heading">Example:-</h1>
+                <br>
+                <p class="info">Let say the page reference string 7 0 1 2 0 3 0 4 2 3 0 3 2 .Find number of page faults.</p>
+                <br>
+                <img src="../img/lru.png" alt="fifo-example">
+                <br>
+                <p class="info">Initially we have 4 page slots empty.</p>
+                <br>
+                <p class="info">Initially all slots are empty, so when 7 0 1 2 are allocated to the empty slots —> 4 Page faults</p>
+                <br>
+                <p class="info">0 is already their so —> 0 Page fault.</p>
+                <br>
+                <p class="info">when 3 came it will take the place of 7 because it is least recently used —>1 Page fault</p>
+                <br>
+                <p class="info">0 is already in memory so —> 0 Page fault.</p>
+                <br>
+                <p class="info">4 will takes place of 1 —> 1 Page Fault.</p>
+                <br>
+                <p class="info">Now for the further page reference string —> 0 Page fault because they are already available in the memory.</p>
+            </div>
+            <!-- FIFO Algo -->
+            <input type="button" onClick="parent.location='lru_algo.html'" value="Demo" class="btn">
+        </div>
+    </div>
+
+    
+</body>
+</html>
+
+<!-- <div class="card">
+    <h1 class="heading"></h1>
+    <br>
+    <p class="info"></p>
+    <br>
+    <p class="info"></p>
+    <br>
+    <p class="info"></p>
+</div> -->

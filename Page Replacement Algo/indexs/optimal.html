@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OPTIMAL</title>
+    <link rel="stylesheet" href="../style/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,900&family=Roboto:ital,wght@0,300;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- header -->
+    <header class="nav">
+        <a href="#">Home</a>
+        <a href="./intro.html">Introduction</a>
+        <a href="./fifo.html">FIFO</a>
+        <a href="./lifo.html">LIFO</a>
+        <a href="./lru.html">LRU</a>
+        <a href="./optimal.html">Optimal</a>
+        <a href="./belady.html">Belady's Anomaly</a>
+        <a href="./comparision.html">Comparision</a>
+    </header>
+    <!-- FIFO Body -->
+    <div class="body">
+        <div class="card-container">
+            <!-- FIFO -->
+            <div class="card">
+                <h1 class="heading">Optimal Page Replacement Algorithm</h1>
+                <br>
+                <p class="info">OPT Algorithm :–</p>
+                <br>
+                <p class="info">It is also known as OPT, clairvoyant replacement algorithm, or Belady’s optimal page replacement policy.</p>
+                <br>
+                <p class="info">Optimal Page Replacement algorithm is the best page replacement algorithm as it gives the least number of page faults.</p>
+                <br>
+                <p class="info">In this algorithm, pages are replaced which would not be used for the longest duration of time in the future.</p>
+                <br>
+                <p class="info">i.e., the pages in the memory which are going to be referred farthest in the future are replaced.</p>
+                <br>
+                <p class="info">Although it can not be practically implementable but it can be used as a benchmark. Other algorithms are compared to this in terms of optimality.</p>
+                <br>
+                <p class="info">This algorithm was introduced long back and is difficult to implement because it requires future knowledge of the program behaviour.</p>
+                <br>
+                <p class="info">However, it is possible to implement optimal page replacement on the second run by using the page reference information collected on the first run.</p>
+                <br>
+                <p class="info">Optimal page replacement algorithm is said to satisfy the stack algorithm.</p>
+            </div>
+            <!-- Example -->
+            <div class="card">
+                <h1 class="heading">Example:-</h1>
+                <br>
+                <p class="info">Consider the page references 7, 0, 1, 2, 0, 3, 0, 4, 2, 3, 0, 3, 2, with 4 page frame. Find number of page fault</p>
+                <br>
+                <img src="../img/optimal.png" alt="fifo-example">
+                <br>
+                <p class="info">Initially all slots are empty, so when 7 0 1 2 are allocated to the empty slots —> 4 Page faults</p>
+                <br>
+                <p class="info">0 is already there so —> 0 Page fault.</p>
+                <br>
+                <p class="info">when 3 came it will take the place of 7 because it is not used for the longest duration of time in the future.—>1 Page fault.</p>
+                <br>
+                <p class="info">0 is already there so —> 0 Page fault.</p>
+                <br>
+                <p class="info">4 will takes place of 1 —> 1 Page Fault.</p>
+                <br>
+                <p class="info">Optimal page replacement is perfect, but not possible in practice as the operating system cannot know future requests.</p>
+                <br>
+                <p class="info">The use of Optimal Page replacement is to set up a benchmark so that other replacement algorithms can be analyzed against it.</p>
+            </div>
+            <!-- FIFO Algo -->
+            <input type="button" onClick="parent.location='optimal_algo.html'" value="Demo" class="btn">
+        </div>
+    </div>
+
+    <script src="../js/optimal.js"></script>
+</body>
+</html>

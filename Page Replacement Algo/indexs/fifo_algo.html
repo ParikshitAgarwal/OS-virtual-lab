@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="../style/algo.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1 class="heading">DEMO</h1>
+    <h2 class="heading">(FIRST IN FIRST OUT)</h2>
+
+    <div class="card">
+        <div class="card_input">
+            <h1>INPUT</h1>
+            <div id="card_reference"> 
+                <p class="info">Reference String:</p>
+                <input class="input" type="text" id="input">
+            </div>
+            <div id="card_frames">
+            <p class="info">Frames:</p>
+            <input class="input" type="number" id="frames" min=1 max=10>
+        </div>
+            <button class="input" id="submit" >Submit</button>
+
+        </div>
+        <div class="output">
+            <br>
+            <table id="table" class="container text-center"></table>
+            <br>
+            <br>
+            <div id="summary"></div>
+        </div>
+    </div>
+    <script src="../js/fifo.js"></script>
+</body>
+
+</html>

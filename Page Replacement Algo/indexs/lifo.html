@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LIFO</title>
+    <link rel="stylesheet" href="../style/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,900&family=Roboto:ital,wght@0,300;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- header -->
+    <header class="nav">
+        <a href="#">Home</a>
+        <a href="./intro.html">Introduction</a>
+        <a href="./fifo.html">FIFO</a>
+        <a href="./lifo.html">LIFO</a>
+        <a href="./lru.html">LRU</a>
+        <a href="./optimal.html">Optimal</a>
+        <a href="./belady.html">Belady's Anomaly</a>
+        <a href="./comparision.html">Comparision</a>
+    </header>
+    <!-- FIFO Body -->
+    <div class="body">
+        <div class="card-container">
+            <!-- FIFO -->
+            <div class="card">
+                <h1 class="heading">Last In First Out (LIFO)</h1>
+                <br>
+                <p class="info">Last-In-First-Out (LIFO) Replacement.</p>
+                <br>
+                <p class="info">It replaces the newest page that arrived at last in the main memory.</p>
+                <br>
+                <p class="info">It is implemented by keeping track of all the pages in a stack.</p>
+                <br>
+                <p class="info">LIFO is a method of processing data in which the last items entered are the first to be removed. This is the opposite of LIFO is FIFO (First In, First Out), in which items are removed in the order they have been entered.</p>
+                <br>
+                <p class="info">To better understand LIFO, imagine stacking a deck of cards by placing one card on top of the other, starting from the bottom. Once the deck has been fully stacked, you begin to remove the cards, starting from the top. This process is an example of the LIFO method, because the last cards to be placed on the deck are the first ones to be removed.</p>
+                <br>
+                <p class="info">The LIFO method is sometimes used by computers when extracting data from an array or data buffer. When a program needs to access the most recent information entered, it will use the LIFO method.</p>
+            </div>
+            <!-- Example -->
+            <!-- <div class="card">
+                <h1 class="heading">Example:-</h1>
+                <br>
+                <p class="info">Consider page reference string 1, 3, 0, 3, 5, 6 with 3 page frames.Find number of page faults.</p>
+                <br>
+                <img src="../img/fifo.png" alt="fifo-example">
+                <br>
+                <p class="info">Initially all slots are empty, so when 1, 3, 0 came they are allocated to the empty slots —> 3 Page Faults.</p>
+                <br>
+                <p class="info">when 3 comes, it is already in memory so —> 0 Page Faults.</p>
+                <br>
+                <p class="info">Then 5 comes, it is not available in memory so it replaces the oldest page slot i.e 1. —>1 Page Fault.</p>
+                <br>
+                <p class="info">6 comes, it is also not available in memory so it replaces the oldest page slot i.e 3 —>1 Page Fault.</p>
+                <br>
+                <p class="info">Finally when 3 come it is not avilable so it replaces 0 1 page fault.</p>
+            </div> -->
+            <!-- FIFO Algo -->
+            <input type="button" onClick="parent.location='lifo_algo.html'" value="Demo" class="btn">
+        </div>
+    </div>
+
+    <script src="../js/lifo.js"></script>
+</body>
+</html>
+
+<!-- <div class="card">
+    <h1 class="heading"></h1>
+    <br>
+    <p class="info"></p>
+    <br>
+    <p class="info"></p>
+    <br>
+    <p class="info"></p>
+</div> -->

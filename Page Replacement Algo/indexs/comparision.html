@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COMPARISION</title>
+    <link rel="stylesheet" href="../style/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,900&family=Roboto:ital,wght@0,300;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- header -->
+    <header class="nav">
+        <a href="#">Home</a>
+        <a href="./intro.html">Introduction</a>
+        <a href="./fifo.html">FIFO</a>
+        <a href="./lifo.html">LIFO</a>
+        <a href="./lru.html">LRU</a>
+        <a href="./optimal.html">Optimal</a>
+        <a href="./belady.html">Belady's Anomaly</a>
+        <a href="./comparision.html">Comparision</a>
+    </header>
+    <!-- FIFO Body -->
+    <div class="body">
+        <div class="card-container">
+            <!-- FIFO Algo -->
+            <div class="card">
+                <div class="container">
+                    <strong>Reference String:</strong>
+                    <input class="input" type="text" style="width: 55%;" id="input">
+                    <strong>Frames:</strong> <input class="input" type="number" id="frames" style="width: 10%;" min=1 max=10>
+                  
+                    <button class="input" id="compare" style="width: 10%;">Compare</button>
+                    <br/>
+                    <br/>
+                    
+                    <div>
+                      <br>
+                      <div id="tfifo" class="d-flex justify-content-around font-weight-bold text-uppercase "> </div>
+                      <br/>
+                      <table id="table_fifo" class="container text-center"></table>
+                      <br/>
+                      <div id="summary_fifo" class="d-flex justify-content-around font-weight-bold text-uppercase"> </div>
+                      <br/>
+                      <br/>
+                      <br/>
+                      <div id="tlifo" class="d-flex justify-content-around font-weight-bold text-uppercase "> </div>
+                      <br/>
+                      <table id="table_lifo" class="container text-center"></table>
+                      <br/>
+                      <div id="summary_lifo" class="d-flex justify-content-around font-weight-bold text-uppercase"> </div>
+                      <br/>
+                      <br/>
+                      <br/>
+                      <div id="tlru" class="d-flex justify-content-around font-weight-bold text-uppercase "> </div>
+                      <br/>
+                      <table id="table_lru" class="container text-center"></table>
+                      <br/>
+                      <div id="summary_lru" class="d-flex justify-content-around font-weight-bold text-uppercase"> </div>
+                      <br/>
+                      <br/>
+                      <br/>
+                      <div id="toptimal" class="d-flex justify-content-around font-weight-bold text-uppercase "> </div>
+                      <br/>
+                      <table id="table_optimal" class="container text-center"></table>
+                      <br/>
+                      <div id="summary_optimal" class="d-flex justify-content-around font-weight-bold text-uppercase"> </div>
+                      <br/><br/><br/>
+      
+                      <div id="summary_Miss_ratio" class="d-flex justify-content-around font-weight-bold text-uppercase"> </div>
+                      <br/><br/>
+                      <div id="chartContainer_Miss_ratio" style="height: 300px; width: 100%;"></div>
+                      <br/><br/><br/><br/>
+      
+                      <div id="summary_Hit_ratio" class="d-flex justify-content-around font-weight-bold text-uppercase"> </div>
+                      <br/><br/>
+                      <div id="chartContainer_Hit_ratio" style="height: 300px; width: 100%;"></div>
+                      <br/><br/><br/><br/>
+      
+                      <div id="summary_Page_fault" class="d-flex justify-content-around font-weight-bold text-uppercase"> </div>
+                      <br/>
+                      <div id="chartContainer" style="height: 300px; width: 100%;">
+                      <br/>
+                      <br/>
+                      <div id="summary_Hit_ratio" class="d-flex justify-content-around font-weight-bold text-uppercase"> </div>
+                      <br/>
+                     
+      
+                      <div id="chartContainer" style="height: 300px; width: 100%;"> 
+            </div> 
+        </div>
+    </div>
+
+    <script src="../js/comparison.js"></script>
+    <script type="text/javascript" src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+</body>
+</html>
+
+<!-- <div class="card">
+    <h1 class="heading"></h1>
+    <br>
+    <p class="info"></p>
+    <br>
+    <p class="info"></p>
+    <br>
+    <p class="info"></p>
+</div> -->
